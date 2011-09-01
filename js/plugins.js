@@ -12,12 +12,13 @@ window.log = function(){
 
 
 function includeHtml(container,url,content, insert){
-	$(container).hide().html('');
+	$(container).hide();
 	$(container).load(url, function(data) {
 		if (insert == 'after'){
 			$(content).after(data);
 		}else{
 			$(content).before(data);
 		}
-	});		
+	});	
+	$(container).html('');	
 }
