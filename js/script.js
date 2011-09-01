@@ -1,5 +1,5 @@
 jQuery(document).ready(function($){  
-	var _getContainer = $('#loadContent').hide();
+	var _getContainer = $('#loadContent');
 	var _content = $('#main');
 	
 	includeHtml(_getContainer,'inc/header.html',_getContainer,'before');
